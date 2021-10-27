@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .h-image-carousel {
+            max-height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <!-- header selamat datang -->
+        <h1 class="text-center">Halo Selamat datang di <span class="badge bg-success"> Explore
+                wisata Lebak Selatan </span>
+        </h1>
+        <hr>
+
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/karang-bokor.jpeg" class="d-block w-100 h-image-carousel rounded" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Karang Bokor</h5>
+                        <p>Lokasi wisata ada di desa pulo manuk</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/karang-taraje.jpeg" class="d-block w-100 h-image-carousel rounded" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pantai Karang Taraje</h5>
+                        <p>Lokasi Wisata ada di desa pulo manuk</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/sawarna.jpeg" class="d-block w-100 h-image-carousel rounded" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pantai pasir putih sawarna</h5>
+                        <p>Lokasi wisata ada di desa Sawarna</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- daftar wisata favorit -->
+
+        <h2 class="text-center">Daftar Wisata <span class="badge bg-success">Favorit</span> di lebak selatan</h2>
+        <hr>
+
+        <div class="row my-5">
+            <div class="col-md-4">
+                <img src="img/karang-bokor.jpeg" class="rounded mx-auto d-block img-thumbnail mb-3" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="accordion" id="accordionKarangBokor">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOneKarangBokor" aria-expanded="true"
+                                aria-controls="collapseOneKarangBokor">
+                                Penawaran Promo Menarik Wisata Karang Bokor
+                            </button>
+                        </h2>
+                        <div id="collapseOneKarangBokor" class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne" data-bs-parent="#accordionKarangBokor">
+                            <div class="accordion-body">
+                                Tersedia promo menarik untuk bulan Desember, <span class="badge bg-secondary"> beli
+                                    tiket 1 dapat 1</span> , dengan harga mulai dari <strong>Rp.10,000.00</strong> Saja
+                                Loh
+                                <div class="my-3">
+                                    <button class="btn btn-success">Pesan Tiket Sekarng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwoKarangBokor" aria-expanded="false"
+                                aria-controls="collapseTwoKarangBokor">
+                                Fasilitas yang tersedia
+                            </button>
+                        </h2>
+                        <div id="collapseTwoKarangBokor" class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo" data-bs-parent="#accordionKarangBokor">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat Penginapan / vila
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat Ibadah / Mushola
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat BAB/BAK
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat parkir yang luas dan aman
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThreeKarangbokor" aria-expanded="false"
+                                aria-controls="collapseThreeKarangbokor">
+                                Lokasi
+                            </button>
+                        </h2>
+                        <div id="collapseThreeKarangbokor" class="accordion-collapse collapse"
+                            aria-labelledby="headingThree" data-bs-parent="#accordionKarangBokor">
+                            <div class="accordion-body">
+                                <strong>Sawarna, Bayah, Kabupaten Lebak, Banten</strong>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.254141632419!2d106.277702249522!3d-6.979310470256583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4291dede1b5501%3A0x7bc0f9e64bace9a3!2sKarang%20Bokor%20Sawarna!5e0!3m2!1sid!2sid!4v1635342557599!5m2!1sid!2sid"
+                                    width="100%" height="200" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-8">
+                <div class="accordion" id="accordionTanjungLayar">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOneTanjungLayar" aria-expanded="true"
+                                aria-controls="collapseOneTanjungLayar">
+                                Penawaran Promo Menarik Wisata Tanjung Layar
+                            </button>
+                        </h2>
+                        <div id="collapseOneTanjungLayar" class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne" data-bs-parent="#accordionTanjungLayar">
+                            <div class="accordion-body">
+                                Tersedia promo menarik untuk bulan Desember, <span class="badge bg-secondary"> beli
+                                    tiket 1 dapat 1</span> , dengan harga mulai dari <strong>Rp.20,000.00</strong> Saja
+                                Loh
+                                <div class="my-3">
+                                    <button class="btn btn-success">Pesan Tiket Sekarng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwoTanjunglayar" aria-expanded="false"
+                                aria-controls="collapseTwoTanjunglayar">
+                                Fasilitas yang tersedia
+                            </button>
+                        </h2>
+                        <div id="collapseTwoTanjunglayar" class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo" data-bs-parent="#accordionTanjungLayar">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat Penginapan / vila
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat Ibadah / Mushola
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat BAB/BAK
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat parkir yang luas dan aman
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Minimarket dan coffee cafe
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThreeTanjungLayar" aria-expanded="false"
+                                aria-controls="collapseThreeTanjungLayar">
+                                Lokasi
+                        </h2>
+                        <div id="collapseThreeTanjungLayar" class="accordion-collapse collapse"
+                            aria-labelledby="headingThree" data-bs-parent="#accordionTanjungLayar">
+                            <div class="accordion-body">
+                                <strong>Desa Sawarna, Kecamatan Bayah, Kabupaten Lebak, Banten</strong>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1302330936232!2d106.30497724952214!3d-6.993939070412772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4290365ecbaad7%3A0xe40b1b4e2a603902!2sPantai%20Tanjung%20Layar!5e0!3m2!1sid!2sid!4v1635343202859!5m2!1sid!2sid"
+                                    width="100%" height="200" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="img/tanjung-layar.png" class="rounded mx-auto d-block img-thumbnail mb-3" alt="...">
+            </div>
+
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-4">
+                <img src="img/teh-cikuya.jpeg" class="rounded mx-auto d-block img-thumbnail mb-3" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="accordion" id="accordionTehCikuya">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTehCikuya" aria-expanded="true"
+                                aria-controls="collapseTehCikuya">
+                                Penawaran Promo Menarik Wisata Kebun Teh Cikuya
+                            </button>
+                        </h2>
+                        <div id="collapseTehCikuya" class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne" data-bs-parent="#accordionTehCikuya">
+                            <div class="accordion-body">
+                                Tersedia promo menarik untuk bulan Desember, <span class="badge bg-secondary"> beli
+                                    tiket 1 dapat 1</span> , dengan harga mulai dari <strong>Rp.10,000.00</strong> Saja
+                                Loh
+                                <div class="my-3">
+                                    <button class="btn btn-success">Pesan Tiket Sekarng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Fasilitas yang tersedia
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionTehCikuya">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat Penginapan / vila
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat Ibadah / Mushola
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat BAB/BAK
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" checked disabled
+                                            aria-label="...">
+                                        Tempat parkir yang luas dan aman
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Lokasi
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionTehCikuya">
+                            <div class="accordion-body">
+                                <strong>Desa Cikuya Kecamatan Cibeber, Kabupaten Lebak</strong>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.724490774396!2d106.36584694952013!3d-6.803332668404983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e427d5e714df7eb%3A0xf9e0e81bb9c0f8c2!2sKebun%20Teh%20Organik%20Harendong!5e0!3m2!1sid!2sid!4v1635343720581!5m2!1sid!2sid"
+                                    width="100%" height="200" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
